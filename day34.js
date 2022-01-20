@@ -51,4 +51,9 @@ localStorage.setItems('products',productsCartToString)
 let productsData= localStorage.getItem('products')
 console.log(JSON.parse(productsData));
 // Bai 2
+function changeBackground(color) {
+    document.body.style.background = color;
+ }
+ window.addEventListener("load",function() { changeBackground('yellow') });
+
 
